@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>home page</title>
+    <link rel="icon" type="home/png" href="sss.png">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+body{
+    background-image:url("shi1.jpg");
+    background-size:cover;
+}
+#karo{
+    position:flex ; 
+    justify-content:center;
+    text-align:center;
+    top: 535px;
+    opacity: 0.0 ;
+    animation: helloo 2s;
+    animation-delay: 2s;
+    animation-fill-mode:forwards;
+
+}
+@keyframes helloo{
+    0%{ opacity: 0.0}
+    100%{ opacity: 1.0}
+}
+
+#ye{font-size: 20px;
+margin-top:240px;
+font-family:cursive;
+text-align:-webkit-center;
+color:whitesmoke;
+animation: woho 2s;
+animation-delay:0.3s;
+animation-fill-mode: forwards;
+}
+#ye span{
+    background-image: url("shi2.jpg");
+    border-radius: 22px;
+    padding: 0px;
+
+}
+@keyframes woho {
+    0%{font-size: 20px; opacity: 0.5; margin-top:240px;
+     text-align:center; text-decoration:none; color:whitesmoke; backdrop-filter:blur(5px) }
+    100%{font-size: 70px; opacity: 1.0; margin-top:240px;
+     text-align:center; text-shadow: 8px 8px 5px black; color:whitesmoke; }
+}
+input:focus{
+    outline:none;
+}
+.btn:hover
+{
+    background-image: none !important;
+    background-color: rgb(241, 0, 0) !important;
+}
+
+
+</style>
+<body>
+
+    <div id='ye'>
+    <div><span>Hey Shirley's Fan</span><br><span>Tell Us Your Name</span></div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+   
+    <form id="karo" action="" method="">
+    <input type="text" style="border-spacing: 4px;
+    
+    font-size: 26px; text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     background-origin:padding-box; padding: 5px;
+    border-color: black; border-radius: 22px; background-color:rgb(210, 243, 240); opacity: 0.9; width:400px; height: 35px;" spellcheck="false" name="submitnm" ><br><br>
+    <input type="submit" style=" margin-top:8px; width:auto; height:auto;
+     border:none; font-size:30px; border-radius: 11px; background-color: darkred; color: white; "   name="submit" class='btn btn-default btn-success btn-lg'
+      value="SUBMIT!" onclick="saveit();">
+    </form>
+    <script>
+    function saveit(){
+        var inpt = document.getElementsByName("submitnm");
+        alert(inpt);
+    }
+    
+    </script>
+
+    
+</body>
+</html>
